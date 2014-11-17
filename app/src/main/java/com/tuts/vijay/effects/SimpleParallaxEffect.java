@@ -47,12 +47,7 @@ public class SimpleParallaxEffect extends Activity implements ObservableScrollVi
 
     @Override
     public void onScrollChanged(ScrollView scrollView, int x, int y, int oldx, int oldy) {
-        Log.d("test", "x: " + x + ", y: " + y);
-        imgBkg.scrollTo(imgBkg.getScrollX(), y / 2);
+        imgBkg.scrollTo(imgBkg.getScrollX(), y / 2); // scroll the image at half the speed of scroll view
     }
 
-    @Override
-    public void onScrollStopped() {
-
-    }
 }

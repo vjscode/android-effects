@@ -9,15 +9,9 @@ import android.widget.ScrollView;
  */
 public class ObservableScrollView extends ScrollView {
 
-    private int lastScrollPosition = 0;
-
-    private int delay = 200;
-
     public interface ScrollViewListener {
 
         void onScrollChanged(ScrollView scrollView, int x, int y, int oldx, int oldy);
-
-        void onScrollStopped();
 
     }
 

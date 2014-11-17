@@ -25,25 +25,5 @@ public class ParallaxContainer extends LinearLayout {
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         super.onLayout(changed, l, t, r, b);
-        /*View content = getChildAt(0);
-        int childWidth = content.getMeasuredWidth();
-        int childHeight = content.getMeasuredHeight();
-
-        Log.d("test", "height: " + getMeasuredHeight() +
-            "pheight..: " + ((View)getParent()).getMeasuredHeight());
-        int pHeight = ((View)getParent()).getMeasuredHeight();
-        //content.layout(l, (pHeight - childHeight), r, childHeight);
-        setChildFrame(content, l, (pHeight  - 300), childWidth, childHeight);
-
-        Log.d("test", "bottom: " + content.getBottom());
-        setMinimumHeight(content.getBottom());*/
-    }
-
-    private void setChildFrame(View child, int left, int top, int width, int height) {
-        Log.d("test", "left: " + left
-                     + "top: " + top
-                     + "right: " + (left+width)
-                     + "height.: " + (top+height)) ;
-        child.layout(left, top, left + width, top + height);
     }
 }

@@ -8,7 +8,7 @@
         android:src="@drawable/cutting_board"
         android:id="@+id/bkgImg"
     />
-<com.vijay.tuts.util.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.vijay.tuts.util.ObservableScrollView
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,7 +16,7 @@
     android:fillViewport="true"
     tools:context=".SimpleParallaxEffect">
 
-    <com.vijay.tuts.util.ParallaxContainer
+    <LinearLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -34,11 +34,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:background="@android:color/white">
-
-            <!--<TextView
-                android:text="@string/hello_world"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />-->
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -74,6 +69,6 @@
             </RelativeLayout>
         </RelativeLayout>
 
-    </com.vijay.tuts.util.ParallaxContainer>
+    </LinearLayout>
 </com.vijay.tuts.util.ObservableScrollView>
 </FrameLayout>
