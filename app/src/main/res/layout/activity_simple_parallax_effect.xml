@@ -1,0 +1,79 @@
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/cutting_board"
+        android:id="@+id/bkgImg"
+    />
+<com.vijay.tuts.util.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/obsScrollView"
+    android:fillViewport="true"
+    tools:context=".SimpleParallaxEffect">
+
+    <com.vijay.tuts.util.ParallaxContainer
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:background="@android:color/darker_gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/white">
+
+            <!--<TextView
+                android:text="@string/hello_world"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/title"
+                        android:text="Hand Painted Timber Cheese Board, Handmade Wooden Serving Board, Gold Feather, Double Sided, Engagement Gift, Wedding Gift"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/title"
+                        android:layout_marginTop="10dp"
+                        android:text="$76.32"
+                        android:id="@+id/price"
+                        android:textColor="@android:color/holo_green_light"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/price"
+                        android:text="@string/product_desc" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </com.vijay.tuts.util.ParallaxContainer>
+</com.vijay.tuts.util.ObservableScrollView>
+</FrameLayout>
